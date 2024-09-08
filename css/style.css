@@ -1,0 +1,50 @@
+/* Estilo geral do corpo */
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/29/06/17/background-1868054_1280.jpg'); /* Fundo de circuitos */
+    background-size: cover;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    line-height: 1.8;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* Contêiner principal */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com transparência */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Títulos das perguntas */
+h2 {
+    font-size: 28px;
+    color: #ffcc00; /* Cor amarela para destaque */
+    margin-bottom: 15px;
+}
+
+/* Texto das respostas */
+p {
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+/* Destaque no texto */
+.highlight {
+    color: #00bfff; /* Cor azul para destaques */
+    font-weight: bold;
+}
+
+/* Listagem com destaque */
+ul {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceitos de Redes</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Vincula o CSS externo -->
+</head>
+<body>
+    <div class="container">
+        <h2>1. O que são VLANs? Para que elas servem?</h2>
+        <p>VLANs (Virtual Local Area Networks) são redes locais virtuais que segmentam uma rede física em várias redes lógicas distintas. Elas servem para separar domínios de broadcast, melhorar a segurança, a performance da rede, e permitir que dispositivos em diferentes locais físicos, mas na mesma VLAN, se comportem como se estivessem na mesma rede física.</p>
+        
+        <h2>2. Cite três vantagens ao se reduzir o tamanho dos domínios de broadcasts.</h2>
+        <p>Reduzir o tamanho dos domínios de broadcast oferece várias vantagens:</p>
+        <ul>
+            <li><span class="highlight">Menor Tráfego de Rede:</span> Reduz a quantidade de mensagens de broadcast que circulam na rede, diminuindo a latência e aumentando a eficiência.</li>
+            <li><span class="highlight">Melhor Desempenho:</span> Com menos dispositivos por domínio, a rede responde mais rapidamente, pois há menos colisões e congestionamentos.</li>
+            <li><span class="highlight">Aumento da Segurança:</span> Limita o alcance dos broadcasts, dificultando que dispositivos mal-intencionados acessem toda a rede.</li>
+        </ul>
+        
+        <h2>3. O que são enlaces de trunk?</h2>
+        <p>Enlaces de trunk são conexões entre switches que transportam o tráfego de múltiplas VLANs ao mesmo tempo. Eles utilizam um protocolo de tagging, como o IEEE 802.1Q, para identificar a que VLAN cada quadro de dados pertence, permitindo que múltiplas VLANs compartilhem um único enlace físico.</p>
+        
+        <h2>4. Quantas VLANs é possível ter em um switch? E qual delas é a VLAN nativa?</h2>
+        <p>É possível ter até 4096 VLANs em um switch, mas o limite prático é geralmente menor devido a restrições de hardware e configuração. A VLAN nativa é a VLAN padrão para tráfego não marcado, que normalmente é a VLAN 1, mas pode ser configurada para outra VLAN para melhorar a segurança.</p>
+        
+        <h2>5. Qual equipamento permite segmentar os domínios de colisão? Em qual camada do modelo OSI esse equipamento opera?</h2>
+        <p>Os switches são os equipamentos que segmentam domínios de colisão. Eles operam na <span class="highlight">Camada 2</span> (Camada de Enlace) do modelo OSI, utilizando endereços MAC para direcionar o tráfego de dados dentro da rede.</p>
+        
+        <h2>6. Qual equipamento permite segmentar os domínios de broadcast? Em qual camada do modelo OSI esse equipamento opera?</h2>
+        <p>Os roteadores são os equipamentos que segmentam domínios de broadcast. Eles operam na <span class="highlight">Camada 3</span> (Camada de Rede) do modelo OSI, utilizando endereços IP para encaminhar pacotes entre diferentes redes.</p>
+        
+        <h2>7. Qual o equipamento necessário para realizar uma comunicação entre VLANs diferentes?</h2>
+        <p>Para permitir a comunicação entre VLANs diferentes, é necessário utilizar um <span class="highlight">roteador</span> ou um <span class="highlight">switch de Camada 3</span> (com capacidade de roteamento). Esse processo é conhecido como <em>Inter-VLAN Routing</em>, e ele permite que pacotes sejam encaminhados entre VLANs distintas.</p>
+    </div>
+</body>
+</html>
