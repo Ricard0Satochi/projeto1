@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolos de Redes</title>
+    <link rel="stylesheet" href="css/prova.css">
+</head>
+<body>
+    <header>
+        <h1>Principais Protocolos e Conceitos de Redes</h1>
+        <h2>volte para o inicio <a href="index.html"></a></h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#protocolos">Protocolos da Camada de Enlace</a></li>
+            <li><a href="#csma-ca">CSMA/CA</a></li>
+            <li><a href="#mac">Endereços MAC</a></li>
+            <li><a href="#equipamentos">Equipamentos de Camada 2</a></li>
+            <li><a href="#switch-vs-hub">Switch vs Hub</a></li>
+            <li><a href="#arp">Protocolo ARP</a></li>
+            <li><a href="#stp">Protocolo Spanning Tree (STP)</a></li>
+            <li><a href="#plug-play">Switches Plug and Play</a></li>
+            <li><a href="#tabela-mac">Tabela MAC do Switch</a></li>
+            <li><a href="#dominio-broadcast">Domínios de Broadcast</a></li>
+            <li><a href="#trunk">Enlaces de Trunk</a></li>
+            <li><a href="#inter-vlan">Inter-VLAN</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="protocolos">
+            <h2>Protocolos da Camada de Enlace</h2>
+            <p>Os principais protocolos da camada de enlace incluem Ethernet, PPP (Point-to-Point Protocol) e HDLC. PPP e HDLC são amplamente usados em enlaces ponto a ponto.</p>
+        </section>
+
+        <section id="csma-ca">
+            <h2>CSMA/CA</h2>
+            <p>O CSMA/CA é utilizado principalmente em redes sem fio para evitar colisões, permitindo que os dispositivos verifiquem se o canal está livre antes de transmitir dados.</p>
+        </section>
+
+        <section id="mac">
+            <h2>Endereços MAC</h2>
+            <p>Os endereços MAC são identificadores únicos de 48 bits, divididos entre OUI (Identificador Único Internacional) e uma parte específica do fabricante.</p>
+        </section>
+
+        <section id="equipamentos">
+            <h2>Equipamentos de Camada 2</h2>
+            <p>Switches operam na camada 2 do modelo OSI e são responsáveis por segmentar domínios de colisão.</p>
+        </section>
+
+        <section id="switch-vs-hub">
+            <h2>Switch vs Hub</h2>
+            <p>Switches segmentam a rede em múltiplos domínios de colisão, melhorando a performance, enquanto hubs causam mais colisões.</p>
+        </section>
+
+        <section id="arp">
+            <h2>Protocolo ARP</h2>
+            <p>O ARP é utilizado para mapear endereços IP para endereços MAC, permitindo a comunicação dentro de uma rede local.</p>
+        </section>
+
+        <section id="stp">
+            <h2>Protocolo Spanning Tree (STP)</h2>
+            <p>O STP previne loops de rede, garantindo um caminho único e ativo entre dois dispositivos na rede.</p>
+        </section>
+
+        <section id="plug-play">
+            <h2>Switches Plug and Play</h2>
+            <p>Switches são plug and play porque aprendem automaticamente os endereços MAC e não necessitam de configuração prévia.</p>
+        </section>
+
+        <section id="tabela-mac">
+            <h2>Tabela MAC do Switch</h2>
+            <p>As entradas na tabela MAC são apagadas após um tempo para liberar espaço e se adaptar dinamicamente às mudanças na rede.</p>
+        </section>
+
+        <section id="dominio-broadcast">
+            <h2>Domínios de Broadcast</h2>
+            <p>Reduzir os domínios de broadcast melhora o desempenho da rede, diminui o tráfego desnecessário e aumenta a segurança.</p>
+        </section>
+
+        <section id="trunk">
+            <h2>Enlaces de Trunk</h2>
+            <p>Enlaces de trunk transportam tráfego de múltiplas VLANs, usando protocolos como 802.1Q para identificar as VLANs.</p>
+        </section>
+
+        <section id="inter-vlan">
+            <h2>Inter-VLAN</h2>
+            <p>Para comunicação entre VLANs, é necessário um roteador ou um switch L3 com suporte para roteamento entre VLANs.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Maria Clara</p>
+    </footer>
+</body>
+</html>
